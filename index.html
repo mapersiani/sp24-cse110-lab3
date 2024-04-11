@@ -4,7 +4,7 @@
 <head>
     <title>Matteo's Meeting Minutes</title>
     <meta charset="UTF-8">
-    <link >
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png">
     <nav class="menu">
         <ul>
             <li><a href="#">Meeting Topic</a></li>
@@ -23,6 +23,7 @@
     <header>
         <h1>CSE110 Meeting Minutes</h1>
     </header>
+    <hr>
     <main>
         <section>
             <h2>Past Stuff</h2>
@@ -41,7 +42,10 @@
         </section>
         <section>
             <h2>Attendance</h2>
-            <p>Matteo Persiani, Matteo's Ghost</p>
+            <ol>
+                <li><b>Matteo Persiani</b></li>
+                <li><strong>Matteo's Ghost</strong></li>
+            </ol>
         </section>
         <section>
             <h2>Unfinished Business</h2>
@@ -74,8 +78,8 @@
     <footer>
         <details>
             <summary>Q&A During the Meeting</summary>
-            <p>Question: </p>
-            <p>Answer: </p>
+            <div>Question: </div>
+            <div>Answer: </div>
         </details>
         <form>
             <fieldset>
@@ -86,7 +90,15 @@
                 <input type="date" id="date" name="date"><br>
                 <label for="feedback">Feedback:</label><br>
                 <textarea id="feedback" name="feedback"></textarea><br>
+                <label for="reach out">Would you like us to reach out to you before the next meeting?</label>
+                <input type="checkbox" id="reach out" name="reach out"><br>
                 <button type="submit">Submit</button>
+                <div>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="yes">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="no">
+                </div>
             </fieldset>
         </form>
     </footer>
