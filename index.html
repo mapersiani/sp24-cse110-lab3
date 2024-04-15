@@ -8,115 +8,144 @@
 </head>
 
 <body>
-    <nav class="menu">
-        <ul>
-            <li><a href="#meeting topic">Meeting Topic</a></li>
-            <li><a href="#attendance">Today's Attendance</a></li>
-            <li><a href="#past stuff">Past Stuff</a></li>
-            <li><a href="#unfinished">Unfinished Business</a></li>
-            <li><a href="#new business">New Business</a></li>
-            <li><a href="#miscellaneous">Miscellaneous</a></li>
-            <li><a href="#qa">Q&A</a></li>
-            <li><a href="#feedback">Feedback</a></li>
-        </ul>
-    </nav>
+    <section>
+        <nav class="menu">
+            <ul>
+                <li><a href="#meeting-topic">Meeting Topic</a></li>
+                <li><a href="#attendance">Today's Attendance</a></li>
+                <li><a href="#past-stuff">Past Stuff</a></li>
+                <li><a href="#unfinished">Unfinished Business</a></li>
+                <li><a href="#new-business">New Business</a></li>
+                <li><a href="#miscellaneous">Miscellaneous</a></li>
+                <li><a href="#q&a">Q&A</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </section>
     <header>
         <h1>CSE110 Meeting Minutes</h1>
     </header>
     <hr>
     <main>
-        <details id="past stuff">
-            <summary>
-                <h2>Past Stuff</h2>
-            </summary>
-            <ul>
-                <li>Lab 1 Plans</li>
-                <li>Learned to use branches</li>
-            </ul>
-        </details>
-        <details id="meeting topic">
-            <summary>
-                <h2>Plan for this Meeting</h2>
-                <h3>Meeting Date: 04/09/2024</h3>
-            </summary>
-            <ul>
-                <li>Review of previous meeting's unfinished business</li>
-                <li>Discussion of new business</li>
-            </ul>
-        </details>
-        <details id="attendance">
-            <summary>
-                <h2>Attendance</h2>
-            </summary>
-            <ol>
-                <li><b>Matteo Persiani</b></li>
-                <li><strong>Matteo's Ghost</strong></li>
-            </ol>
-        </details>
-        <details id="unfinished">
-            <summary>
-                <h2>Unfinished Business</h2>
-            </summary>
-            <p>Last time we wrapped up Lab 1 and introduced Lab 2. Today, we need to continue brainstorming for Lab 2.
-            </p>
-        </details>
-        <details id="new business">
-            <summary>
-                <h2>New Business</h2>
-            </summary>
-            <p>For Lab 2, we need to make an HTML page. I have some experience with HTML and CSS so this shouldn't be
-                too difficult. I hope to be able to finish this lab within the next few days so that I have the weekend
-                free.</p>
-        </details>
-        <details id="miscellaneous">
-            <summary>
-                <h2>Miscellaneous</h2>
-            </summary>
-            <p>We can't forget to do this assignment. Be productive and start early.</p>
-        </details>
-        <figure>
-            <img src="screenshots/SWEDoingStuff.png"
-                alt="Software engineers gathered together drawing on a whiteboard and planning things out">
-            <figcaption>SWE's Doing Stuff</figcaption>
-        </figure>
-        <audio controls>
-            <source src="meeting_audio.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        <video controls>
-            <source src="meeting_video.mp4" type="video/mp4">
-            Your browser does not support the video element.
-        </video>
+        <section>
+            <h2>Past Stuff</h2>
+            <details id="past-stuff">
+                <summary>View</summary>
+                <ul>
+                    <li>Lab 1 Plans</li>
+                    <li>Learned to use branches</li>
+                </ul>
+            </details>
+        </section>
+        <br>
+        <section>
+            <h2>Plan for this Meeting</h2>
+            <h3>Meeting Date: 04/09/2024</h3>
+            <details id="meeting-topic">
+                <summary>View</summary>
+                <ul>
+                    <li>Review of previous meeting's unfinished business</li>
+                    <li>Discussion of new business</li>
+                </ul>
+            </details>
+        </section>
+        <br>
+        <section>
+            <h2>Attendance</h2>
+            <details id="attendance">
+                <summary>View</summary>
+                <ol>
+                    <li><b>Matteo Persiani (b)</b></li>
+                    <li><strong>Matteo's Ghost (strong)</strong></li>
+                </ol>
+            </details>
+        </section>
+        <br>
+        <section>
+            <h2>Unfinished Business</h2>
+            <details id="unfinished">
+                <summary>View</summary>
+                <p>Last time we wrapped up Lab 1 and introduced Lab 2. Today, we need to continue brainstorming for Lab 2.
+                </p>
+            </details>
+        </section>
+        <br>
+        <section>
+            <h2>New Business</h2>
+            <details id="new-business">
+                <summary>View</summary>
+                <p>For Lab 2, we need to make an HTML page. I have some experience with HTML and CSS so this shouldn't be
+                    too difficult. I hope to be able to finish this lab within the next few days so that I have the weekend
+                    free.</p>
+            </details>
+        </section>
+        <br>
+        <section>
+            <h2>Miscellaneous</h2>
+            <details id="miscellaneous">
+                <summary>View</summary>
+                <p>We can't forget to do this assignment. Be productive and start early.</p>
+                <br>
+                <figure>
+                    <img src="screenshots/SWEDoingStuff.png"
+                        alt="Software engineers gathered together drawing on a whiteboard and planning things out">
+                    <figcaption>
+                        <i>Image from the meeting (i)</i>
+                        <em>Image from the meeting (em)</em>
+                    </figcaption>
+                </figure>
+            </details>
+        </section>
+        <br>
+        <section>
+            <audio controls>
+                <source src="meeting_audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <br>
+        <section>
+            <video controls>
+                <source src="meeting_video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
     </main>
+    <br>
     <footer>
-        <details id="qa">
-            <summary>Q&A During the Meeting</summary>
-            <div>Question: What are the main goals for today's session?</div>
-            <div>Answer: To finalize the agenda and assign responsibilities.</div>
-        </details>
-        <form>
-            <fieldset>
-                <legend>Want to Add Anything?</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date"><br>
-                <label for="feedback">Feedback:</label><br>
-                <textarea id="feedback" name="feedback"></textarea><br>
-                <label for="reachout">Would you like us to reach out to you before the next meeting?</label>
-                <div>
-                    <input type="radio" id="yes" name="reachout" value="Yes">
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="no" name="reachout" value="No">
-                    <label for="no">No</label>
-                </div>
-                <button type="submit">Submit</button>
-            </fieldset>
-            <label for="reach-out">Send a copy of these notes to your email?</label>
-            <input type="checkbox" id="reach-out" name="reach-out"><br>
-        </form>
+        <section>
+            <details id="q&a">
+                <summary>Q&A During the Meeting</summary>
+                <div>Question: What are the main goals for today's session?</div>
+                <div>Answer: To finalize the agenda and assign responsibilities.</div>
+            </details>
+        </section>
+        <br>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Want to Add Anything?</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date"><br>
+                    <label for="feedback">Feedback:</label><br>
+                    <textarea id="feedback" name="feedback"></textarea><br>
+                    <label for="reachout">Would you like us to reach out to you before the next meeting?</label>
+                    <div>
+                        <input type="radio" id="yes" name="reachout" value="Yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="reachout" value="No">
+                        <label for="no">No</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </fieldset>
+                <label>Send a copy of these notes to your email?</label>
+                <input type="checkbox" id="reach-out" name="reach-out"><br>
+            </form>
+        </section>
     </footer>
 </body>
 
