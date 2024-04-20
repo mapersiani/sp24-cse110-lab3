@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3 - Starter
 
-[Site](https://mapersiani.github.io/HTML-DevTools/)
+[Site](https://mapersiani.github.io/sp24-cse110-lab3/)
