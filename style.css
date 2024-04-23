@@ -4,8 +4,17 @@
     --fallback-color: beige; /* Fallback color if main background color fails */
 }
 
-body {
+* {
     font-family: "Oswald", sans-serif; /* Sets Oswald as the primary typeface */
+}
+
+input[type="text"] {
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 100%; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+}
+
+body {
     background-color: var(--main-bg-color, var(--fallback-color)); /* Uses variable for background color with a fallback */
     color: #434242ea; /* Text color with alpha transparency */
     margin-left: 1%; /* Left margin */
@@ -37,29 +46,30 @@ body {
     margin: auto; /* Center menu horizontally */
 }
 
-.menu li {
+.menu > ul > li {
     display: inline-block; /* Displays list items inline but with block properties */
 }
 
-.menu a {
-    display: block; /* Makes the entire area clickable */
-    padding: 10px 20px; /* Padding inside each link */
-    color: lightgoldenrodyellow; /* Text color */
-    text-decoration: none; /* Removes underline from links */
-}
+.menu {
+    a {
+        display: block; /* Makes the entire area clickable */
+        padding: 10px 20px; /* Padding inside each link */
+        color: lightgoldenrodyellow; /* Text color */
+        text-decoration: none; /* Removes underline from links */
 
-.menu a:hover {
-    background-color: #777; /* Changes background on hover */
-}
+        &:hover {
+            background-color: #777; /* Changes background on hover */
+        }
 
-.menu a:active {
-    background-color: beige; /* Background color when link is clicked */
+        &:active {
+            background-color: beige; /* Background color when link is clicked */
+        }
+    }
 }
 
 header {
     text-align: center; /* Centers header content */
-    font-family: 'Courier New', Courier, monospace; /* Font style for the header */
-    font-size: 15pt; /* Font size using point values */
+    font-size: 18pt; /* Font size using point values */
     font-weight: bold; /* Bold font weight */
     background-color: rgba(93, 68, 49, 0.35); /* Semi-transparent background color */
     border-radius: 10px; /* Rounded corners */
@@ -91,12 +101,16 @@ h2 {
     margin-top: 0; /* Removes top margin */
 }
 
-h3 {
+h2 ~ h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Font family for H3 */
     font-size: 15px; /* Font size */
     text-align: center; /* Center text alignment */
     text-decoration: underline; /* Underline text decoration */
     text-transform: lowercase; /* Transforms text to lowercase */
+}
+
+h2 + h3 {
+    color: darkblue; /* Text color */
 }
 
 section {
@@ -122,6 +136,12 @@ details summary {
     font-weight: bold; /* Bold font weight */
 }
 
+p.description {
+    font-size: 1rem; /* Font size in rems */
+    color: #d900ff52; /* Text color */
+
+}
+
 .qanda {
     text-align: center; /* Centers text in Q&A section */
     font-size: 1.25rem; /* Font size in rems */
@@ -143,6 +163,10 @@ details summary {
 
 .list li {
     margin-bottom: 5px; /* Space below each list item */
+}
+
+section:has(> h3) {
+    background-color: rgba(202, 183, 136, 0.771); /* Semi-transparent background color */
 }
 
 img {
@@ -175,6 +199,10 @@ footer form {
     flex-direction: column; /* Stacks form elements vertically */
     width: 80%; /* Width relative to parent */
     max-width: 400px; /* Maximum width limit */
+}
+
+#addstuff {
+    color:rgb(37, 61, 198); /* Text color with alpha transparency */
 }
 
 button:active {
