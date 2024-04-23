@@ -183,16 +183,15 @@ button a:active {
 
 @media (max-width: 600px) {
 
-    body,
-    nav,
-    header,
-    main,
-    footer,
-    section {
+    body, nav, header, main, footer, section {
         padding: 10px;
         /* Consistent padding around sections */
         width: auto;
         /* Ensures content fits the width of the device */
+    }
+
+    .menu {
+        position: static;
     }
 
     .menu ul {
@@ -220,9 +219,7 @@ button a:active {
         /* Ensures the entire area is clickable */
     }
 
-    header,
-    main,
-    footer {
+    header, main, footer {
         width: 100%;
         /* Full width to avoid horizontal overflow */
         margin: 10px 0;
@@ -241,15 +238,12 @@ button a:active {
         /* Center content vertically within each section */
     }
 
-    h1,
-    h2,
-    h3 {
+    h1, h2, h3 {
         text-align: center;
         /* Centers headings for better readability */
     }
 
-    img,
-    video {
+    img, video {
         max-width: 100%;
         /* Ensures media does not exceed screen width */
         height: auto;
@@ -282,15 +276,13 @@ button a:active {
 
 @media (min-width: 601px) and (max-width: 900px) {
 
-    header,
-    main,
-    footer {
+    header, main, footer {
         padding: 15px;
         /* Adjust padding */
     }
 
     .menu {
-        position: fixed;
+        position: static;
     }
 
     .menu li {
@@ -298,8 +290,7 @@ button a:active {
         /* Slightly larger tap targets */
     }
 
-    h1,
-    h2 {
+    h1, h2 {
         font-size: larger;
         /* Increase font size for better visibility */
     }
@@ -315,8 +306,7 @@ button a:active {
         /* Allow more horizontal layout in sections */
     }
 
-    img,
-    video {
+    img, video {
         max-width: 100%;
         /* Adjust max width for better fit */
     }
