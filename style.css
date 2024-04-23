@@ -1,0 +1,323 @@
+/* Styling for index.html */
+:root {
+    --main-bg-color: color-mix(in srgb, rgba(172, 155, 207, 0.574) 25%, rgba(255, 165, 0, 0.5) 75%);
+    --fallback-color: beige;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: var(--main-bg-color, var(--fallback-color));
+    color: #434242ea;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    background-color: #4d403872;
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #777;
+}
+
+.menu a:active {
+    background-color: beige;
+}
+
+header {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15pt;
+    font-weight: bold;
+    background-color: rgba(93, 68, 49, 0.35);
+    border-radius: 10px;
+    border-style: outset;
+    padding: 0.25in 0.25in 0.25in 0.25in;
+    margin: 1vw 0vw 1vw 0vw;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 20px auto;
+}
+
+h2 {
+    padding: 10px;
+    background-color: rgba(93, 68, 49, 0.109);
+    text-align: center;
+    border-style: outset;
+    border-radius: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: rgba(205, 205, 170, 0.252);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+details {
+    font-size: 1rem;
+    color: rgba(37, 61, 198, 0.765);
+    color: color(srgb, 0.145, 0.239, 0.776, 0.765);
+}
+
+details summary {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.qanda {
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: rgba(93, 68, 49, 0.35);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 15px;
+    color: #4d4038;
+}
+
+.answer {
+    font-size: 15px;
+    color: #713030;
+}
+
+.list li {
+    margin-bottom: 5px;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+video {
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    max-height: 800px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #4d403872;
+    border-radius: 10px;
+    color: white;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column; /* Aligns form elements vertically */
+    width: 80%;             /* Sets a max width to prevent overly wide forms */
+    max-width: 400px;       /* Ensures form doesn't get too wide on larger screens */
+}
+
+button a:active {
+    background-color: beige;
+}
+
+@media (max-width: 600px) {
+
+    body,
+    nav,
+    header,
+    main,
+    footer,
+    section {
+        padding: 10px;
+        /* Consistent padding around sections */
+        width: auto;
+        /* Ensures content fits the width of the device */
+    }
+
+    .menu ul {
+        width: 100%;
+        /* Full width for the menu */
+        padding: 0;
+        /* Removes padding to utilize full width */
+        margin: 0;
+        /* Removes margin to fit content to edges */
+    }
+
+    .menu li {
+        display: block;
+        /* Each menu item on a new line */
+        width: 100%;
+        /* Full width for each menu item */
+        margin: 5px 0;
+        /* Adds a little space between menu items */
+    }
+
+    .menu a {
+        padding: 10px;
+        /* Larger padding for easy touch */
+        display: block;
+        /* Ensures the entire area is clickable */
+    }
+
+    header,
+    main,
+    footer {
+        width: 100%;
+        /* Full width to avoid horizontal overflow */
+        margin: 10px 0;
+        /* Adds top and bottom margin for separation */
+    }
+
+    main {
+        display: block;
+        /* Stacking content blocks vertically */
+    }
+
+    section {
+        flex-direction: column;
+        /* Ensure all sections are aligned vertically */
+        justify-content: center;
+        /* Center content vertically within each section */
+    }
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+        /* Centers headings for better readability */
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        /* Ensures media does not exceed screen width */
+        height: auto;
+        /* Maintains aspect ratio */
+    }
+
+    details {
+        width: 100%;
+        /* Full width for expandable sections */
+    }
+
+    .qanda,
+    .list li {
+        text-align: left;
+        /* Aligns text to the left for consistency */
+    }
+
+    footer form {
+        width: 100%;
+        /* Full width for forms to utilize space */
+        flex-direction: column;
+        /* Stacks form elements vertically */
+    }
+
+    button {
+        width: 100%;
+        /* Full width button for easier interaction */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    header,
+    main,
+    footer {
+        padding: 15px;
+        /* Adjust padding */
+    }
+
+    .menu {
+        position: fixed;
+    }
+
+    .menu li {
+        padding: 10px 15px;
+        /* Slightly larger tap targets */
+    }
+
+    h1,
+    h2 {
+        font-size: larger;
+        /* Increase font size for better visibility */
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Two columns for main content */
+    }
+
+    section {
+        flex-direction: row;
+        /* Allow more horizontal layout in sections */
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        /* Adjust max width for better fit */
+    }
+}
