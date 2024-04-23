@@ -1,184 +1,184 @@
 /* Styling for index.html */
 :root {
-    --main-bg-color: color-mix(in srgb, rgba(172, 155, 207, 0.574) 25%, rgba(255, 165, 0, 0.5) 75%);
-    --fallback-color: beige;
+    --main-bg-color: color-mix(in srgb, rgba(172, 155, 207, 0.574) 25%, rgba(255, 165, 0, 0.5) 75%); /* Custom background color using color-mix */
+    --fallback-color: beige; /* Fallback color if main background color fails */
 }
 
 body {
-    font-family: "Oswald", sans-serif;
-    background-color: var(--main-bg-color, var(--fallback-color));
-    color: #434242ea;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    font-family: "Oswald", sans-serif; /* Sets Oswald as the primary typeface */
+    background-color: var(--main-bg-color, var(--fallback-color)); /* Uses variable for background color with a fallback */
+    color: #434242ea; /* Text color with alpha transparency */
+    margin-left: 1%; /* Left margin */
+    margin-right: 1%; /* Right margin */
+    margin-top: 1%; /* Top margin */
+    margin-bottom: 1%; /* Bottom margin */
 }
 
 .menu {
-    position: sticky;
-    top: 0;
+    position: sticky; /* Makes the menu stick at the top of the viewport */
+    top: 0; /* Position menu at the very top */
 }
 
 .menu ul {
-    list-style-type: none;
-    background-color: #4d403872;
-    text-align: center;
-    border-radius: 10px;
-    border-style: solid;
-    border-top: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
-    border-left: 2px solid #ddd;
-    border-right: 2px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: auto;
+    list-style-type: none; /* Removes bullet points from list */
+    background-color: #4d403872; /* Semi-transparent background color for menu */
+    text-align: center; /* Centers text in the menu */
+    border-radius: 10px; /* Rounded corners for the menu */
+    border-style: solid; /* Solid border style */
+    border-top: 2px solid #ddd; /* Top border color */
+    border-bottom: 2px solid #ddd; /* Bottom border color */
+    border-left: 2px solid #ddd; /* Left border color */
+    border-right: 2px solid #ddd; /* Right border color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
+    padding-left: 5px; /* Left padding */
+    padding-right: 5px; /* Right padding */
+    padding-top: 10px; /* Top padding */
+    padding-bottom: 10px; /* Bottom padding */
+    margin: auto; /* Center menu horizontally */
 }
 
 .menu li {
-    display: inline-block;
+    display: inline-block; /* Displays list items inline but with block properties */
 }
 
 .menu a {
-    display: block;
-    padding: 10px 20px;
-    color: lightgoldenrodyellow;
-    text-decoration: none;
+    display: block; /* Makes the entire area clickable */
+    padding: 10px 20px; /* Padding inside each link */
+    color: lightgoldenrodyellow; /* Text color */
+    text-decoration: none; /* Removes underline from links */
 }
 
 .menu a:hover {
-    background-color: #777;
+    background-color: #777; /* Changes background on hover */
 }
 
 .menu a:active {
-    background-color: beige;
+    background-color: beige; /* Background color when link is clicked */
 }
 
 header {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15pt;
-    font-weight: bold;
-    background-color: rgba(93, 68, 49, 0.35);
-    border-radius: 10px;
-    border-style: outset;
-    padding: 0.25in 0.25in 0.25in 0.25in;
-    margin: 1vw 0vw 1vw 0vw;
+    text-align: center; /* Centers header content */
+    font-family: 'Courier New', Courier, monospace; /* Font style for the header */
+    font-size: 15pt; /* Font size using point values */
+    font-weight: bold; /* Bold font weight */
+    background-color: rgba(93, 68, 49, 0.35); /* Semi-transparent background color */
+    border-radius: 10px; /* Rounded corners */
+    border-style: outset; /* 3D border effect */
+    padding: 0.25in 0.25in 0.25in 0.25in; /* Padding inside the header */
+    margin: 1vw 0vw 1vw 0vw; /* Vertical and horizontal margin using viewport width units */
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    margin: 20px auto;
+    display: grid; /* Uses grid layout for main content */
+    grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+    grid-template-rows: auto; /* Row height set automatically */
+    gap: 20px; /* Space between grid items */
+    padding: 10px; /* Padding inside main content */
+    border-radius: 10px; /* Rounded corners for main area */
+    border: 2px solid #ddd; /* Border around the main content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
+    padding: 2rem; /* Padding, specified in rems for scalability */
+    margin: 20px auto; /* Center main content horizontally and add vertical space */
 }
 
 h2 {
-    padding: 10px;
-    background-color: rgba(93, 68, 49, 0.109);
-    text-align: center;
-    border-style: outset;
-    border-radius: 10px;
-    border-bottom: 1px solid #ddd;
-    margin-top: 0;
+    padding: 10px; /* Padding inside heading */
+    background-color: rgba(93, 68, 49, 0.109); /* Semi-transparent background color */
+    text-align: center; /* Center text alignment */
+    border-style: outset; /* 3D border effect */
+    border-radius: 10px; /* Rounded corners */
+    border-bottom: 1px solid #ddd; /* Bottom border color */
+    margin-top: 0; /* Removes top margin */
 }
 
 h3 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
-    text-align: center;
-    text-decoration: underline;
-    text-transform: lowercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Font family for H3 */
+    font-size: 15px; /* Font size */
+    text-align: center; /* Center text alignment */
+    text-decoration: underline; /* Underline text decoration */
+    text-transform: lowercase; /* Transforms text to lowercase */
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    background-color: rgba(205, 205, 170, 0.252);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: flex-start; /* Aligns content to the start of the flex container */
+    align-items: stretch; /* Stretches items to fill the container */
+    background-color: rgba(205, 205, 170, 0.252); /* Semi-transparent background color */
+    padding: 20px; /* Padding inside sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
 }
 
 details {
-    font-size: 1rem;
-    color: rgba(37, 61, 198, 0.765);
-    color: color(srgb, 0.145, 0.239, 0.776, 0.765);
+    font-size: 1rem; /* Font size in rems */
+    color: rgba(37, 61, 198, 0.765); /* Text color with alpha transparency */
+    color: color(srgb, 0.145, 0.239, 0.776, 0.765); /* Another definition for color using the color function */
 }
 
 details summary {
-    cursor: pointer;
-    padding: 10px;
-    font-weight: bold;
+    cursor: pointer; /* Changes cursor to pointer to indicate clickable */
+    padding: 10px; /* Padding inside summary */
+    font-weight: bold; /* Bold font weight */
 }
 
 .qanda {
-    text-align: center;
-    font-size: 1.25rem;
-    background-color: rgba(93, 68, 49, 0.35);
-    padding: 20px;
-    border-radius: 10px;
+    text-align: center; /* Centers text in Q&A section */
+    font-size: 1.25rem; /* Font size in rems */
+    background-color: rgba(93, 68, 49, 0.35); /* Semi-transparent background color */
+    padding: 20px; /* Padding inside Q&A section */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .question {
-    font-weight: bold;
-    font-size: 15px;
-    color: #4d4038;
+    font-weight: bold; /* Bold font weight */
+    font-size: 15px; /* Font size */
+    color: #4d4038; /* Text color */
 }
 
 .answer {
-    font-size: 15px;
-    color: #713030;
+    font-size: 15px; /* Font size */
+    color: #713030; /* Text color */
 }
 
 .list li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Space below each list item */
 }
 
 img {
-    width: auto;
-    height: auto;
-    max-width: 600px;
-    max-height: 600px;
+    width: auto; /* Auto width adjusts to the content's intrinsic width */
+    height: auto; /* Auto height to maintain aspect ratio */
+    max-width: 600px; /* Maximum width limit */
+    max-height: 600px; /* Maximum height limit */
 }
 
 video {
-    width: auto;
-    height: auto;
-    max-width: 600px;
-    max-height: 800px;
+    width: auto; /* Auto width adjusts to the content's intrinsic width */
+    height: auto; /* Auto height to maintain aspect ratio */
+    max-width: 600px; /* Maximum width limit */
+    max-height: 800px; /* Maximum height limit */
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #4d403872;
-    border-radius: 10px;
-    color: white;
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    flex-direction: column; /* Stacks items vertically */
+    padding: 20px; /* Padding inside footer */
+    background-color: #4d403872; /* Semi-transparent background color */
+    border-radius: 10px; /* Rounded corners */
+    color: white; /* Text color */
 }
 
 footer form {
-    display: flex;
-    flex-direction: column; /* Aligns form elements vertically */
-    width: 80%;             /* Sets a max width to prevent overly wide forms */
-    max-width: 400px;       /* Ensures form doesn't get too wide on larger screens */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks form elements vertically */
+    width: 80%; /* Width relative to parent */
+    max-width: 400px; /* Maximum width limit */
 }
 
 button a:active {
-    background-color: beige;
+    background-color: beige; /* Background color when active */
 }
 
 @media (max-width: 600px) {
@@ -189,94 +189,75 @@ button a:active {
     main,
     footer,
     section {
-        padding: 10px;
-        /* Consistent padding around sections */
-        width: auto;
-        /* Ensures content fits the width of the device */
+        padding: 10px; /* Consistent padding around sections */
+        width: auto; /* Ensures content fits the width of the device */
+    }
+
+    .menu {
+        position: static;
     }
 
     .menu ul {
-        width: 100%;
-        /* Full width for the menu */
-        padding: 0;
-        /* Removes padding to utilize full width */
-        margin: 0;
-        /* Removes margin to fit content to edges */
+        width: 100%; /* Full width for the menu */
+        padding: 0; /* Removes padding to utilize full width */
+        margin: 0; /* Removes margin to fit content to edges */
     }
 
     .menu li {
-        display: block;
-        /* Each menu item on a new line */
-        width: 100%;
-        /* Full width for each menu item */
-        margin: 5px 0;
-        /* Adds a little space between menu items */
+        display: block; /* Each menu item on a new line */
+        width: 100%; /* Full width for each menu item */
+        margin: 5px 0; /* Adds a little space between menu items */
     }
 
     .menu a {
-        padding: 10px;
-        /* Larger padding for easy touch */
-        display: block;
-        /* Ensures the entire area is clickable */
+        padding: 10px; /* Larger padding for easy touch */
+        display: block; /* Ensures the entire area is clickable */
     }
 
     header,
     main,
     footer {
-        width: 100%;
-        /* Full width to avoid horizontal overflow */
-        margin: 10px 0;
-        /* Adds top and bottom margin for separation */
+        width: 100%; /* Full width to avoid horizontal overflow */
+        margin: 10px 0; /* Adds top and bottom margin for separation */
     }
 
     main {
-        display: block;
-        /* Stacking content blocks vertically */
+        display: block; /* Stacking content blocks vertically */
     }
 
     section {
-        flex-direction: column;
-        /* Ensure all sections are aligned vertically */
-        justify-content: center;
-        /* Center content vertically within each section */
+        flex-direction: column; /* Ensure all sections are aligned vertically */
+        justify-content: center; /* Center content vertically within each section */
     }
 
     h1,
     h2,
     h3 {
-        text-align: center;
-        /* Centers headings for better readability */
+        text-align: center; /* Centers headings for better readability */
     }
 
     img,
     video {
-        max-width: 100%;
-        /* Ensures media does not exceed screen width */
-        height: auto;
-        /* Maintains aspect ratio */
+        max-width: 100%; /* Ensures media does not exceed screen width */
+        height: auto; /* Maintains aspect ratio */
     }
 
     details {
-        width: 100%;
-        /* Full width for expandable sections */
+        width: 100%; /* Full width for expandable sections */
     }
 
     .qanda,
     .list li {
-        text-align: left;
-        /* Aligns text to the left for consistency */
+        text-align: left; /* Aligns text to the left for consistency */
     }
 
     footer form {
-        width: 100%;
-        /* Full width for forms to utilize space */
-        flex-direction: column;
-        /* Stacks form elements vertically */
+        width: 100%; /* Full width for forms to utilize space */
+        flex-direction: column; /* Stacks form elements vertically */
     }
 
     button {
-        width: 100%;
-        /* Full width button for easier interaction */
+        width: 100%; /* Full width button for easier interaction */
     }
 }
 
@@ -285,39 +266,30 @@ button a:active {
     header,
     main,
     footer {
-        padding: 15px;
-        /* Adjust padding */
+        padding: 15px; /* Adjust padding */
     }
 
     .menu {
-        position: fixed;
+        position: static;
     }
 
     .menu li {
-        padding: 10px 15px;
-        /* Slightly larger tap targets */
+        padding: 10px 15px; /* Slightly larger tap targets */
     }
 
     h1,
     h2 {
-        font-size: larger;
-        /* Increase font size for better visibility */
+        font-size: larger; /* Increase font size for better visibility */
     }
 
     main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* Two columns for main content */
-    }
+        display: flex;
+        flex-direction: column; /* Stacks content vertically */
 
-    section {
-        flex-direction: row;
-        /* Allow more horizontal layout in sections */
     }
-
+    
     img,
     video {
-        max-width: 100%;
-        /* Adjust max width for better fit */
+        max-width: 100%; /* Adjust max width for better fit */
     }
 }
