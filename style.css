@@ -138,7 +138,7 @@ details summary {
 
 .answer {
     font-size: 15px; /* Font size */
-    color: #713030; /* Text color */
+    color: hwb(0 19% 56%); /* Text color */
 }
 
 .list li {
@@ -177,8 +177,8 @@ footer form {
     max-width: 400px; /* Maximum width limit */
 }
 
-button a:active {
-    background-color: beige; /* Background color when active */
+button:active {
+    background-color: hsl(60, 56%, 91%); /* Background color when active */
 }
 
 @media (max-width: 600px) {
@@ -287,7 +287,7 @@ button a:active {
         flex-direction: column; /* Stacks content vertically */
 
     }
-    
+
     img,
     video {
         max-width: 100%; /* Adjust max width for better fit */
