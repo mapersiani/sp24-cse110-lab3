@@ -4,19 +4,22 @@
 <head>
     <title>Matteo's Meeting Minutes</title>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/png" href="image/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="menu">
         <ul>
-            <li><a href="#meeting-topic">Meeting Topic</a></li>
-            <li><a href="#attendance">Today's Attendance</a></li>
-            <li><a href="#past-stuff">Past Stuff</a></li>
-            <li><a href="#unfinished">Unfinished Business</a></li>
-            <li><a href="#new-business">New Business</a></li>
-            <li><a href="#miscellaneous">Miscellaneous</a></li>
-            <li><a href="#q&a">Q&A</a></li>
+            <li><a href="#past">Past Stuff</a></li>
+            <li><a href="#this-meeting">Meeting Topic</a></li>
+            <li><a href="#people">Today's Attendance</a></li>
+            <li><a href="#unfinished-biz">Unfinished Business</a></li>
+            <li><a href="#new-biz">New Business</a></li>
+            <li><a href="#misc">Miscellaneous</a></li>
+            <li><a href="#q-a">Q&A</a></li>
             <li><a href="#feedback">Feedback</a></li>
         </ul>
     </nav>
@@ -25,23 +28,23 @@
     </header>
     <hr>
     <main>
-        <section>
+        <section id="past">
             <h2>Past Stuff</h2>
-            <details id="past-stuff">
+            <details>
                 <summary>View</summary>
-                <ul>
+                <ul class="list">
                     <li>Lab 1 Plans</li>
                     <li>Learned to use branches</li>
                 </ul>
             </details>
         </section>
         <br>
-        <section>
+        <section id="this-meeting">
             <h2>Plan for this Meeting</h2>
             <h3>Meeting Date: 04/09/2024</h3>
             <details id="meeting-topic">
                 <summary>View</summary>
-                <ul>
+                <ul class="list">
                     <li>Review of previous meeting's unfinished business</li>
                     <li>Discussion of new business</li>
                 </ul>
@@ -49,10 +52,10 @@
         </section>
         <br>
         <section>
-            <h2>Attendance</h2>
+            <h2 id="people">Attendance</h2>
             <details id="attendance">
                 <summary>View</summary>
-                <ol>
+                <ol class="list">
                     <li><b>Matteo Persiani (b)</b></li>
                     <li><strong>Matteo's Ghost (strong)</strong></li>
                 </ol>
@@ -60,7 +63,7 @@
         </section>
         <br>
         <section>
-            <h2>Unfinished Business</h2>
+            <h2 id="unfinished-biz">Unfinished Business</h2>
             <details id="unfinished">
                 <summary>View</summary>
                 <p>Last time we wrapped up Lab 1 and introduced Lab 2. Today, we need to continue brainstorming for Lab 2.
@@ -69,7 +72,7 @@
         </section>
         <br>
         <section>
-            <h2>New Business</h2>
+            <h2 id="new-biz">New Business</h2>
             <details id="new-business">
                 <summary>View</summary>
                 <p>For Lab 2, we need to make an HTML page. I have some experience with HTML and CSS so this shouldn't be
@@ -79,13 +82,13 @@
         </section>
         <br>
         <section>
-            <h2>Miscellaneous</h2>
+            <h2 id="misc">Miscellaneous</h2>
             <details id="miscellaneous">
                 <summary>View</summary>
                 <p>We can't forget to do this assignment. Be productive and start early.</p>
                 <br>
                 <figure>
-                    <img src="screenshots/SWEDoingStuff.png"
+                    <img src="images/SWEDoingStuff.png"
                         alt="Software engineers gathered together drawing on a whiteboard and planning things out">
                     <figcaption>
                         <i>Image from the meeting (i)</i>
@@ -105,33 +108,35 @@
             </details>
         </section>
     </main>
+    <div class="qanda">
+        <details>
+            <summary id="q-a" style="color: rgba(5, 4, 0, 0.566);">Q&A From During the Meeting</summary>
+            <div class="question">Question: What are the main goals for today's session?</div>
+            <div class="answer">Answer: To finalize the agenda and assign responsibilities.</div>
+        </details>
+    </div>
     <br>
     <footer>
-        <nav>
-            <details id="q&a">
-                <summary>Q&A During the Meeting</summary>
-                <div>Question: What are the main goals for today's session?</div>
-                <div>Answer: To finalize the agenda and assign responsibilities.</div>
-            </details>
-        </nav>
-        <br>
-        <nav>
-            <form>
-                <fieldset>
-                    <legend>Want to Add Anything?</legend>
+        <form>
+            <fieldset>
+                <legend>Want to Add Anything?</legend>
+                <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name">
-                    <br>
+                </div>
+                <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
-                    <br>
+                </div>
+                <div class="form-group">
                     <label for="date">Date:</label>
                     <input type="date" id="date" name="date">
-                    <br>
+                </div>
+                <div class="form-group">
                     <label for="feedback">Feedback:</label>
-                    <br>
                     <textarea id="feedback" name="feedback"></textarea>
-                    <br>
+                </div>
+                <div class="form-group">
                     <span>Would you like us to reach out to you before the next meeting?</span>
                     <div>
                         <input type="radio" id="yes" name="reachout" value="Yes">
@@ -139,14 +144,26 @@
                         <input type="radio" id="no" name="reachout" value="No">
                         <label for="no">No</label>
                     </div>
-                    <button type="submit">Submit</button>
-                </fieldset>
-                <label>Send a copy of these notes to your email?</label>
-                <input type="checkbox" id="reach-out" name="reach-out">
-                <br>
-            </form>
-        </nav>
+                </div>
+                <div class="form-group">
+                    <label>Send a copy of these notes to your email?</label>
+                    <input type="checkbox" id="reach-out" name="reach-out">
+                </div>
+                <button type="submit"><a>Submit</a></button>
+            </fieldset>
+        </form>
     </footer>
+    <img src="images/logo.png" alt="A small logo" class="logo">
+    <style>
+        .logo {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            right: 10px;
+            bottom: 10px;
+            border-radius: 100%;
+        }
+    </style>
 </body>
 
 </html>
